@@ -16,3 +16,6 @@ sudo sh ./kafka-topics.sh --list --bootstrap-server localhost:9092
 
 # inquiry topic(detail)
 sudo sh ./kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic ${TOPIC_NAME}
+
+# view topic
+sudo sh ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic ${TOPIC_NAME}
